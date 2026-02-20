@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Welcome to My Portfolio</h1>
+<p>I am an EC Engineering student interested in IT & Software.</p>
+
+<h2>My Projects</h2>
+<ul>
+    <li>Carrom Robot Project</li>
+    <li>Network Coverage ML Project</li>
+</ul>
+
+<h2>Contact Me</h2>
+<form action="/contact" method="POST">
+    <input type="text" name="name" placeholder="Your Name"><br>
+    <input type="email" name="email" placeholder="Your Email"><br>
+    <textarea name="message" placeholder="Message"></textarea><br>
+    <button type="submit">Send</button>
+</form>
+
+</body>
+</html>
